@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="vertical">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#e0e0e0">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="180dp"
+    android:orientation="horizontal"
+    android:background="@drawable/prueba">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ingresa tu cuenta"
+        android:gravity="center"
+        android:layout_alignParentBottom="true"
+        android:padding="16dp"
+        android:textSize="18sp"
+        android:textColor="#fafafa"/>
+
+</RelativeLayout>
+
+</LinearLayout>
+
+    <TextView
+
+        style="@style/textViewSub"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Usuario"
+        android:layout_gravity="center"/>
+
+     <EditText
+         android:id="@+id/user_edit_text"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:hint="Usuario"/>
+
+     <TextView
+
+         style="@style/textViewSub"
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:text="Contraseña"
+         android:layout_gravity="center"/>
+
+     <EditText
+         android:id="@+id/pass_edit_text"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:inputType="textPassword"
+
+         android:hint="Contraseña"/>
+
+    <Button
+        android:id="@+id/ingresar_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAllCaps="true"
+        android:text="Ingresar"
+        android:layout_marginTop="15dp"
+        android:background="#29434e"
+        android:textColor="#ffff"
+        android:layout_gravity="center"
+        android:onClick="validarOnClick"/>
+
+    <TextView
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="¿Olvidaste tu contraseña?"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+    <TextView
+        android:onClick="pruebaclick"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="15dp"
+        android:text="¿No tienes cuenta?. Regístrate aquí"
+        android:paddingBottom="20dp"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>
+
+</ScrollView>
